@@ -1,7 +1,5 @@
 FROM golang:1.19
 
-LABEL maintainer="Ving <ving@nivin.cn>"
-
 ENV GOPROXY https://goproxy.cn,direct
 
 # 安装必要的软件包和依赖包
@@ -50,9 +48,9 @@ RUN apt-get clean && \
 WORKDIR /usr/src/code
 
 EXPOSE 8000
-EXPOSE 9000
 EXPOSE 9001
 EXPOSE 9002
 EXPOSE 9003
 EXPOSE 9004
 EXPOSE 9005
+EXPOSE 9006
